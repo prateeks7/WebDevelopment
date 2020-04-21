@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Form</title>
+<script type="text/javascript" src="externaljs.js"></script>
+</head>
+<body>
+<form action="#">
+
+	<div id="fullpage">
+	
+		<h1>Make an Order: </h1>
+		<table border="0">
+			<tr>
+				<td class="label_col">First Name:</td>
+				<td class="input_col"><input name="firstname" id="firstname" type="text" onblur="f1()" value="Prateek"></td>
+				<td class="feedback_col"><span id="firstnamePrompt"></td>
+			</tr>
+			<tr>
+				<td class="label_col">Last Name:</td>
+				<td class="input_col"><input name="lastname" id="lastname" type="text" onblur="f2()" value="Prateek"></td>
+				<td class="feedback_col"><span id="lastnamePrompt"></td>
+			</tr>
+			<tr>
+				<td class="label_col">Phone Number:</td>
+				<td class="input_col"><input type="text" name="phonenumber" id="phonenumber" placeholder="xxx-xxx-xxxx" value="123-123-1233" onblur="f3()"></td>
+				<td class="feedback_col"><span id="phonenumberPrompt">xxx-xxx-xxxx</span></td>
+			</tr>
+			<tr>
+				<td class="label_col">Quantity</td>
+				<td class="input_col"><input name="quantity" id="quantity" type="number"></td>
+				<td class="feedback_col"><span id="quantityPrompt">
+			</tr>
+            <tr>
+				<td class="label_col">Price</td>
+				<td class="input_col"><input name ="price" id="price"type="text" value="10.00" readonly></td>
+			</tr>
+			<tr>
+				<td class="Button" id="Button" colspan="3"><span onclick="calOrder();">Order</span></td>
+			</tr>
+
+		</table>
+		<span id="orderConfirm"></span>
+			
+</form>
+
+</body>
+</html>

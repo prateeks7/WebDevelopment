@@ -1,0 +1,32 @@
+<html>
+<head>
+
+    <title>My Dynamic Details Page</title>
+	
+	<script type="text/javascript">
+	
+	function displayInput()
+	{
+		var testInput = document.getElementById("name").value;
+	    if(testInput == 0)
+		{
+			document.getElementById("para").innerHTML = "Hey, you did'nt type anything!"
+	    }
+		else
+		{
+		    document.getElementById("para").innerHTML = testInput;
+		}
+    }
+	
+	</script>
+
+</head>
+<body>
+
+<H1 style="color:blue;">Let's see a button</H1>
+
+<input id="name" type = "text">
+<button onclick="displayInput();">Color It</button>
+<p id="para" style="color:blue;"></p>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<html>
+<body onload='alert("Page is Loaded");'>
+
+<h2>JS</h2>
+<button onclick="document.getElementById('myImage').src='https://i.pinimg.com/originals/4e/6c/68/4e6c68b9df2170b1e5595fb6f6140ec9.jpg'">Naruto</button>
+
+<img id="myImage" src="https://static2.cbrimages.com/wordpress/wp-content/uploads/2019/11/Best-Episodes-Pains-Assault-Arc.jpg" style="width:500px">
+
+<button onclick="document.getElementById('myImage').src='https://c4.wallpaperflare.com/wallpaper/153/622/503/naruto-akatsuki-naruto-pain-naruto-rinnegan-naruto-yahiko-naruto-hd-wallpaper-preview.jpg'">Pain</button>
+<br>
+<button onclick="document.getElementById('BIG').style.fontSize ='50px';">Big</button>
+<p id="BIG">Hi There</p><br>
+<script type="text/javascript">
+function Add()
+   { var me = document.getElementById("HiP").value;  
+    document.getElementById("Bye").innerHTML= me;}
+</script>
+<input id="HiP" type="number">
+<button onclick="Add();">Add</button>
+<p id="Bye"></p>
+<br>
+<script type="text/javascript">
+function Bdd()
+   { var be = document.getElementById("Hib").value;  
+         window.alert(be);}
+</script>
+<input id="Hib" type="text">
+<button onclick="Bdd();">Error</button>
+<br>
+<button onclick="window.print()">Print this page</button>
+<br><script>
+   function myAlertMath()
+   {
+      var usernumber= document.getElementById("mathInput").value;
+	  alert("Your number x 5 is " + usernumber * 5);
+   }
+</script>
+<button onclick="alert('Alert is working fine')">Alert Test</button>
+<input id='mathInput' type='number'>
+<button onclick='myAlertMath()'>Multiply x 5</button>
+<br><script>
+   function myPrompt()
+   {
+      var person= prompt("Name?","Prateek");
+	  if (person != "") 
+	  {
+	    document.getElementById("test").innerHTML = "Hello " + person +" !";
+	  }
+	  
+   }
+</script>
+<button onclick="myPrompt()">Prompt</button>
+<p id="test"></p>
+<br><script>
+   function checkFeild1()
+   {
+      var feild= document.getElementById("field1").value
+	  if (feild.length<5) 
+	  {
+	    document.getElementById("message1").innerHTML = "Too Short";
+	  }
+	  else
+	  {
+	    document.getElementById("message1").innerHTML = "Perfect";
+	  }
+	  
+   }
+   
+   function checkFeild2()
+   {
+      var feild= document.getElementById("field2").value
+	  if (feild != "") 
+	  {
+	    document.getElementById("message2").innerHTML = "Input accepted";
+	  }
+	  else
+	  {
+	    document.getElementById("message2").innerHTML = "You must type something";	  }
+	  
+   }
+</script>
+<input id='field1' type='text' onblur="checkFeild1();">
+<i><span id="message1" style="color:red"></span>
+<input id='field2' type='text' onblur="checkFeild2();"> 
+<span id="message2"></span></i>
+<input id='field3' type='text'> <span id="message3"></span>
+
+</body>
+</html>

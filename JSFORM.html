@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>JSFORM</title>
+</head>
+<body>
+<script>
+   function checkfield1()
+   {
+      var field= document.getElementById("field1").value
+	  if (field.length<5) 
+	  {
+	    document.getElementById("message1").innerHTML = "Too Short";
+	  }
+	  else
+	  {
+	    document.getElementById("message1").innerHTML = "Perfect";
+	  }
+	  
+   }
+   
+   function checkfield2()
+   {
+      var field= document.getElementById("field2").value
+	  if (field != "") 
+	  {
+	    document.getElementById("message2").innerHTML = "Input accepted";
+	  }
+	  else
+	  {
+	    document.getElementById("message2").innerHTML = "You must type something";	  }
+	  
+   }
+   
+   function checkField3 () 
+   {
+      var field = document.getElementById("field3").value;
+	  var regex = /^[A-Za-z]{3}$/;
+	  
+	  if(regex.test(field))
+		document.getElementById("message3").innerHTML = "Input Accepted";
+      else 	
+	    document.getElementById("message3").innerHTML = "Please use a three letter country code";
+
+   }
+</script>
+field 1:<input id='field1' type='text' onblur="checkfield1();">
+<i><span id="message1" style="color:red"></span>
+field 2:<input id='field2' type='text' onblur="checkfield2();"> 
+<span id="message2"></span></i>
+<br><br>
+Country code JS:<input type="text" id="field3" onblur="checkField3()";><span id="message3" required></span>
+<br>Country code HTML5: <input type="text" name="country_code"
+pattern="[A-Za-z]{3}" title="Three letter Country code" required><br>
+<input type="submit">
+</body>
+</html>

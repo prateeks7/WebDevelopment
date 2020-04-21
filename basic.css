@@ -1,0 +1,14 @@
+body
+{
+  background-color: black;
+}
+h1
+{
+  color : white;
+  margin-left:20px;
+}
+.testClass
+{
+   color : red;
+   font-size:300%;
+}
