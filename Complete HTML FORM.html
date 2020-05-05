@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>
+Complete HTML FORM
+</title>
+<script type="text/javascript" src="Complete FORM JS.js"></script>
+<style>
+body
+{	
+	background-color:black;
+	margin-left:500;
+}
+#heading
+{
+	color:white;
+	margin:50;
+}
+td
+{
+	color:white;
+}
+img
+{
+	height:200;
+	width:320;
+	float:center;
+}
+.button
+{
+	color:black;
+	background-color:rgb(248,248,255);
+}
+#description
+{
+	color:white;
+}
+
+</style>
+<body>
+<h1 id="heading">Place Your Order</h1>
+<br>
+<img src="https://truffle-assets.imgix.net/pxqrocxwsjcc_2IVC6CCHZeCa4y82muMuUe_hungry-af_s4e5_chocolate-stout-brownie-sundae_landscapeThumbnail_en.png?auto=compress,format&fm=pjpg&w=1200">
+<br>
+<!-- Form to place order -->
+<form>
+<table border="0">
+	<tr>
+		<td>First Name:</td>
+		<td><input type="text" onblur="f1()" id="firstname" ></td>
+		<td><span id="fn"></td>
+	</tr>
+	<tr>
+		<td>Last Name: </td>
+		<td><input type="text" onblur="f4()" id = "lastname"></td>
+		<td><span id="req"></span>
+	</tr>
+	<tr>	
+		<td>Contact No: </td>
+		<td><input type="text" onblur="f2()" id="contact"></td>
+		<td><span id="no"></td>
+	</tr>
+	<tr>	
+		<td>Address: </td>
+		<td><input type="text" id="address" onblur="f5()"></td>
+		<td><span id="req2"></span>
+	</tr>
+	<tr>	
+		<td>Quantity: </td> 
+		<td><input type="number" min="1" id="quantity"></td>
+	</tr>
+	<tr>	
+		<td>Price: </td>
+		<td><input readonly type="text" value="70" id="price" ></td>
+	</tr>
+	<tr>
+		<td align="center" valign="top">Choose One: </td>
+		<td><input type="radio" name="choose">Dine In</input>
+		<br><input type="radio" name="choose">Take Away</input>
+		<br><input type="radio" name="choose">Free Delivery</input></td>
+	</tr>
+	
+</table>
+<table style="margin-left:89" border="1">
+	<tr>
+		<td class="button" width="10" colspan="3"><span onclick="f3();" >Order</span></td>
+	</tr>
+</table>
+ <span id="summary"></span>
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Here is description of this form -->
+<p1 id="description">Fill Up This Form To Order Brownie Icecream.<br>
+<ul>
+<li>Please Enter Your First And Last Name</li>
+<li>Type Your 10 Digit Contact Number</li>
+<li>Make Sure You Enter Your Exact Address</li>
+<li>Enter quantity</li>
+<li>Choose The Way You Want It Served</li>
+<li>Submit Your Form By Clicking Order</li>
+</ul>
+
+</p1>
+</body>
+</html>
