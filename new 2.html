@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>
+sdfhjhgf
+</title>
+</head>
+<body>
+<form>
+    <input id="myInput" placeholder="Some text.." value="">
+    <button id="myBtn" >
+</form>
+
+<script>
+var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("myBtn").click();
+    }
+});
+</script>
+</body>
+</html>
