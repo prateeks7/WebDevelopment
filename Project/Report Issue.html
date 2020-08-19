@@ -1,0 +1,101 @@
+<html>
+<head>
+<style>
+.page-contact-form input
+{
+border-radius:20px;
+width: 300px;
+max-width: 40%;
+margin-bottom: 20px;
+height:27px;
+margin-left:500px;
+border:1px solid #808080;
+border-radius:20px;
+
+outline:none;
+}
+.page-contact-form textarea 
+{
+   border-radius:20px;
+width: 300px;
+max-width: 40%;
+margin-bottom: 15px;
+margin-left:500px;
+border:1px solid #808080;
+border-radius:15px;
+
+outline:none;
+}
+
+.page-contact-form input.contact-form-button.contact-form-button-submit {
+border-radius:20px;
+padding: 15px;
+background:black;
+color: white ;
+border: 2px solid black;
+cursor: pointer;
+border-radius:20px;
+
+}
+
+.page-contact-form input.contact-form-button.contact-form-button-submit:hover {
+border-radius:20px;
+background: #E32227; 
+color: white;
+border: 2px solid #E32227;
+box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.24), 0 2px 2px 0 rgba(0,0,0,0.19);
+cursor: pointer;
+border-radius:20px;
+}
+.p1{
+margin-left:600px;
+color:black;
+font-size:20px;
+}
+.p2
+{
+   margin-left:610px;
+color:black;
+font-size:20px;
+}
+.p3
+{
+   margin-left:580px;
+color:black;
+font-size:20px;
+}
+form
+{
+margin-top:100px;
+}
+</style></head>
+<body>
+<div style="height:100vh;margin-top:-12px;background-image:url('https://i.ibb.co/1bhPHpQ/fbg.jpg')">
+
+<div class="contact-form-widget page-contact-form">
+<div class="form">
+<br><br>
+<form name="contact-form">
+<p class="p1"><b>User Name:<br></b></p>
+<input class="contact-form-name" id="ContactForm1_contact-form-name" name="name" size="10" type="text" value=""  /><br>
+<p class="p2"><b>E-mail:</b><br></p>
+<input class="contact-form-email" id="ContactForm1_contact-form-email" name="email" size="10" type="text" value="" /><br>
+<p class="p3"><b>Report/Request:</b><br></p>
+<textarea class="contact-form-email-message" cols="5" id="ContactForm1_contact-form-email-message" name="email-message" rows="7" ></textarea><br><br>
+<input style="width:100px;margin-left:600px;padding:4px;" class="contact-form-button contact-form-button-submit" id="ContactForm1_contact-form-submit" type="button" value="Submit" onclick="myFunction(this.value)"/>
+<script>
+function myFunction() {
+ var req=document.getElementById("ContactForm1_contact-form-email-message").value;
+  if(req.length!=0)
+  alert("your report has been submitted");
+  else
+  alert("please enter your request");
+}
+</script>
+</form>
+<br>
+</div>
+</div>
+
+</body>
+</html>

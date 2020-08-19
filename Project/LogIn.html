@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOG IN</title>
+	<style>
+		.logo{
+			
+			text-align: center;
+			padding-right: 20px;
+			
+		}
+		.form{
+			border-radius: 15px;
+			
+			margin-left: 20px;
+		}
+		#head{
+			margin-left: 2;
+			font-size:20px;
+		}
+		.register{
+			margin-left:100px;
+		}
+		h1{
+			color:black;
+		}
+		h1:hover{
+			color: black;
+		}
+		label{
+			color:black;
+		}
+		label:hover{
+			color:black;
+		}
+		button
+		{
+		   background-color:black;
+		   color:white;
+		   width:100px;
+		   height:30px;
+		}
+		button:hover{
+			background-color: #c71a1a;
+			color:white;
+		}
+		input
+		{
+		   border: none;
+           border-bottom: 1px solid #3a3a3a;
+            border-radius: 3px;
+            outline: none;
+           padding: 0px 0px 5px 5px;
+		   background:none;
+		   width:250px;
+		}
+		input:hover{
+			background-color:none;
+			color:black;
+		}
+		
+		body{
+			
+            height: auto;
+			background-image:url('https://i.ibb.co/1bhPHpQ/fbg.jpg');
+			margin:0;
+			padding:0;
+			background-size:100% 120%;
+		
+			
+		}
+		.lap
+		{
+		   width:50%;
+		   height:387px;
+		   border:0px solid;
+		   margin-left:49.8%;
+		   margin-top:150px;
+		   animation: slide 15s infinite;
+		   padding:0px;
+		   background:url('https://i.ibb.co/nkR9ZGF/image.png');
+		   background-size:100%;
+		  		  
+		}
+		@keyframes slide
+		{
+		   20%{background:url('https://i.ibb.co/3vRr2dq/1.png');background-size:100%;}
+		   40%{background:url('https://i.ibb.co/f4gk2BN/02.png');background-size:100%;}
+		   60%{background:url('https://i.ibb.co/ZmvkPGj/3.png');background-size:100%;}
+		   80%{background:url('https://i.ibb.co/mS8f8xJ/4.png');background-size:100%;}
+		   
+		}
+	</style>
+	<script>
+	function send()
+	{
+	   var inpu = document.getElementById("uname").value;
+	   localStorage.setItem("valinput",inpu);
+	   return false;
+	}
+	</script>
+	<script>
+	function err0()
+	{
+	var u = document.getElementById("uname").value;
+	if(u == 0)
+	{
+	  document.getElementById("uerr").innerHTML = "*Please Enter Your UserName";
+	}
+	}
+	function err1()
+	{
+	var pas = document.getElementById("password").value;
+	if(pas == 0)
+	{
+	  document.getElementById("err").innerHTML = "*Please Enter Your Password";
+	}
+	}
+	</script>
+</head>
+<body >
+<div class="lap" >
+</div>
+<div style="margin-top:-510px;margin-left:100px;height:600px;width:500px;">
+		<img src="https://i.ibb.co/rMqHrHV/Transparent-Icon.png" width="250px" style="margin-left:140px;margin-top:0px">
+		<br>
+		<br>
+		<h1 align="center">LOG IN</h1>
+		<br>
+  <form action="./file0.html"/>
+  <table style="margin-left:120px;margin-top:40px;width:500px" border="0px">
+  <tr>
+  <td><input type="text" id="uname" name="uname" placeholder="UserName" onblur="err0();"></td><td style="width:100px"></td><td style="width:1000px"><span id="uerr" style="font-size:12px"></span></td>
+  </tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  
+  <tr>
+  <td><input type="password" id="password" name="password" placeholder="Password" onblur="err1();"></td><td style="width:100px"></td><td><span id="err" style="font-size:12px"></span></td>
+   </tr>
+  </td></tr>
+</table>
+<button onclick="send();" type="submit" style="margin-left:200px;margin-top:50px">LOG IN</button>
+</form> 
+</div>
+</body>
+</html>

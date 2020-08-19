@@ -67,6 +67,50 @@ body{
     99%{    color:transparent;  }
     100%{   color: #ff4948;    }
 }
+.dropup {
+  position: relative;
+  display: inline-block;
+  width:50px;
+  height:50px;
+  margin-left:1299px;
+  margin-top:90px;
+}
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  border-radius:20px;
+  background-color:black ;
+  min-width: 160px;
+  bottom: 50px;
+  margin-left:-130px;
+  z-index: 1;
+}
+.dropup-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  border-radius:20px;
+  display: block;
+}
+
+.dropup-content a:hover {background-color:  #c91426}
+
+.dropup:hover .dropup-content {
+  display: block;
+  border-radius:20px;
+}
+
+.dropup:hover .dropbtn{
+  background-color:  #c91426 ;
+  border-radius:20px;
+}
+#cont{
+  align:left;
+  margin-left:0px;
+  background-color:transparent;
+  cursor: pointer;
+  }
 </style>
 </head>
 <body>
@@ -104,7 +148,7 @@ Just let your thoughts flow and inscribe them her forever for the world to know.
 <table border="0px" style="margin-left:950px">
 <tr>
 <td>
-<button type="submit" class="left" onClick="location.href='https://i.ibb.co/zZGGwvZ/Name.jpg'" target="_blank" >Log in</button>
+<button type="submit" class="left" onClick="location.href='./LogIn.html'" target="_blank" >Log in</button>
 </td>
 <td width="5px"></td>
 <td>
@@ -112,16 +156,14 @@ Just let your thoughts flow and inscribe them her forever for the world to know.
 </td>
 </tr>
 </table>
+<div class="dropup">
+  <button id="cont" >  &#10068</button>
+  <div class="dropup-content">
+    <a href="./Report Issue.html">Report Issue</a>
+    <a href="./Contact Us.html">Contact Us</a>
+</div>	
 </div>
 
-
-
-<!--<form method="get" action="/page2" class="left">
-    <button type="submit">Log in </button>
-</form>
-<form method="get" action="/page2" class="right">
-    <button type="submit">Sign in </button>
-</form>-->
 
 </body>
 </html>

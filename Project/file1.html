@@ -10,7 +10,7 @@ ShekChilli
 {
   font-size:17px;
   outline:none;
-  width:320;
+  width:280;
   height:25;
   border-left:solid 0px;
   border-right:solid 0px;
@@ -29,6 +29,14 @@ ShekChilli
 }
 </style>
 <script>
+function blog()
+{
+   var val = document.getElementById("sblog").value;
+   if(val.length != 0){
+   var tog = "./"+val+ ".html"
+   window.open(tog,'_self');}
+   
+}
 function display()
 	{
 	   var imgtxt1 = document.getElementById("imagelink1").value;
@@ -46,7 +54,14 @@ function display()
 <tr>
 <td></td>
 <td><img src="http://ps-resource-center.s3.amazonaws.com/material-design-icons/action/drawable-hdpi/ic_search_grey600_48dp.png" width="19" height="19"></td>
-<td><input type="text" class="searchbox" title="Search"></input></td>
+<td><input list="blog" class="searchbox" id="sblog" title="Search">
+<datalist id="blog">
+  <option value="Photography">
+  <option value="Education">
+  <option value="Food">
+  <option value="Covid">
+</datalist></input></td>
+<td><button style="border:0px;background-color:white;outline:none" onclick="blog()"><b>Go</b></button></td>
 <td>
 <td></td>
 </tr>
@@ -65,7 +80,7 @@ function display()
 </table>
 	
 <hr>
-<div style="height:auto;background-attachment:fixed;background-image:url('https://images.unsplash.com/photo-1507471509451-1d04d60f896d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1575&q=80');background-repeat:repeat">
+<div style="height:auto;min-height:553px;background-image:url('https://i.ibb.co/1bhPHpQ/fbg.jpg');background-repeat:no-repeat">
 
 <br>
 <form action="./file2.html"/>
@@ -87,6 +102,7 @@ function display()
 <span id="vis" style="margin-left:180px;algin-right:10px;display:none;"><img id="image1" src="" width="200px" style="margin-top:10px;margin-bottom:10px" align="center"/><br></span>
 <p id="txt" style="margin-left:10px;margin-right:10px"></p>
 <script>
+
 document.getElementById("txt").innerHTML = localStorage.getItem("1txt");
 document.getElementById("image1").src = localStorage.getItem("txtimg1");
 var str = localStorage.getItem("txtimg1");

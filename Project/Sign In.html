@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Sign In</title>
+	<link rel="icon" href="https://i.ibb.co/QrZ5CWf/GLOGO.jpg">
 	<style>
 		.logo{
 			
@@ -93,6 +94,101 @@
 	   localStorage.setItem("valinput",inpu);
 	   return false;
 	}
+	function err1()
+	{
+	var f = document.getElementById("fname").value;
+	if(f == 0)
+	{
+	  document.getElementById("err1").innerHTML = "*Please Enter Your FirstName";
+	}
+	else
+	{
+	  document.getElementById("err1").innerHTML = "";
+	}
+	}
+	function err2()
+	{
+	var l = document.getElementById("lname").value;
+	if(l == 0)
+	{
+	  document.getElementById("err2").innerHTML = "*Please Enter Your LastName";
+	}
+	else
+	{
+	  document.getElementById("err2").innerHTML = "";
+	}
+	}function err3()
+	{
+	var u = document.getElementById("uname").value;
+	if(u == 0)
+	{
+	  document.getElementById("err3").innerHTML = "*Please Enter Your UserName";
+	}
+	else
+	{
+	  document.getElementById("err3").innerHTML = "";
+	}
+	}
+	function err4()
+	{
+	var p = document.getElementById("pwd").value;
+	if(p == 0)
+	{
+	  document.getElementById("err4").innerHTML = "*Please Enter Your Password";
+	}
+	else
+	{
+	  document.getElementById("err4").innerHTML = "";
+	}
+	}function err5()
+	{
+	var p = document.getElementById("pwd").value;
+	var p2 = document.getElementById("pwd2").value; 
+	if(p != p2)
+	{
+	  document.getElementById("err5").innerHTML = "*Password Does Not Match";
+	}
+	else
+	{
+	  document.getElementById("err5").innerHTML = "";
+	}
+	}
+	function err6()
+	{
+	var em = document.getElementById("email").value;
+	if(em == 0)
+	{
+	  document.getElementById("err6").innerHTML = "*Please Enter Your Email";
+	}
+	else
+	{
+	  document.getElementById("err6").innerHTML = "";
+	}
+	}function err7()
+	{
+	var c = document.getElementById("contact").value;
+	if(c == 0)
+	{
+	  document.getElementById("err7").innerHTML = "*Please Enter Your Contact";
+	}
+	else
+	{
+	  document.getElementById("err7").innerHTML = "";
+	}
+	}
+	function err8()
+	{
+	var dob = document.getElementById("DOB").value;
+	if(dob == 0)
+	{
+	  document.getElementById("err8").innerHTML = "*Please Enter Your DOB";
+	}
+	else
+	{
+	  document.getElementById("err8").innerHTML = "";
+	}
+	}
+	
 	</script>
 </head>
 <body >
@@ -102,48 +198,48 @@
 		<img src="https://i.ibb.co/rMqHrHV/Transparent-Icon.png" width="250px" style="margin-left:140px;margin-top:0px">
 		<br>
 		<br>
-		<h1 align="center">Register</h1>
+		<h1 align="center">REGISTER</h1>
 		<br>
   <form action="./file0.html"/>
-  <table style="margin-left:50px;margin-top:8px">
+  <table style="margin-left:50px;margin-top:8px;width:650px" border="0px">
   <tr>
   <td style="width:200px"><label id="head" for="fname">First Name:</label></td>
-  <td><input type="text" id="fname" name="fname" placeholder="Enter your first name"></td>
+  <td><input type="text" id="fname" name="fname" placeholder="Enter your first name" onblur="err1()"></td><td><span id="err1" style="font-size:12px"></span></td>
   </tr>
   <tr></tr>
   <tr>
   <td><label id="head" for="lname">Last Name:</label></td>
-  <td><input type="text" id="lname" name="lname" placeholder="Enter your last name"></td>
+  <td><input type="text" id="lname" name="lname" placeholder="Enter your last name" onblur="err2()"></td><td><span id="err2" style="font-size:12px"></span></td>
   </tr>
   <tr></tr>
   <tr>
   <td><label id="head" for="lname">Username:</label></td>
-  <td><input type="text" id="uname" placeholder="Enter a valid username"></td>
+  <td style="width:180px"><input type="text" id="uname" placeholder="Enter a valid username" onblur="err3()"></td><td><span id="err3" style="font-size:12px"></span></td>
   </tr>
   <tr></tr>
   <tr>
   <td><label id="head" for="pwd">Create Password:</label></td>
-  <td><input type="password" id="pwd" name="pwd" placeholder="Enter a password"></td>
+  <td><input type="password" id="pwd" name="pwd" placeholder="Enter a password" onblur="err4()"></td><td><span id="err4" style="font-size:12px"></span></td>
   </tr>
   <tr></tr>
   <tr>
   <td><label id="head" for="pwd">Confirm Password:</label></td>
-  <td><input type="password" id="pwd" name="pwd" placeholder="Confirm your password"></td>
+  <td><input type="password" id="pwd2" name="pwd" placeholder="Confirm your password" onblur="err5()"></td><td><span id="err5" style="font-size:12px"></span></td>
   </tr>
   <tr></tr>
   <tr>
   <td><label id="head" for="email">Email:</label></td>
-  <td><input type="email" id="email" name="email" placeholder="Enter Your Email"></td>
+  <td><input type="email" id="email" name="email" placeholder="Enter Your Email" onblur="err6()"></td><td><span id="err6" style="font-size:12px"></span></td>
   </tr>
   <tr></tr>
   <tr>
-  <td><label id="head" for="quantity">Contact:</label></td>
-  <td><input type="text" id="quantity" name="quantity" maxlength="10" placeholder="xxx-xxx-xxxx"></td>
+  <td><label id="head" for="contact">Contact:</label></td>
+  <td><input type="text" id="contact" name="contact" maxlength="10" placeholder="xxx-xxx-xxxx" onblur="err7()"></td><td><span id="err7" style="font-size:12px"></span></td>
   </tr>
   <tr></tr>
   <tr>
-  <td><label id="head" for="birthdate">Date Of Birth:</label></td>
-  <td><input type="date" id="birthdate" name="birthdate" placeholder="dd-mm-yyyy"></td>
+  <td><label id="head" for="DOB">Date Of Birth:</label></td>
+  <td><input type="date" id="DOB" name="DOB" placeholder="dd-mm-yyyy" onblur="err8()"></td><td><span id="err8" style="font-size:12px"></span></td>
    </tr>
    <tr></tr>
    <tr></tr>
