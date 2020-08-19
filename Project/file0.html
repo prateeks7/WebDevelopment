@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>
+ShakeChilli
+</title>
+<link rel="icon" href="https://i.ibb.co/QrZ5CWf/GLOGO.jpg">
+</head>
+<style>
+.searchbox
+{
+  font-size:17px;
+  outline:none;
+  width:320;
+  height:25;
+  border-left:solid 0px;
+  border-right:solid 0px;
+  border-top:solid 0px;
+  border-bottom:solid 0px;
+  border-radius:0px;
+  margin-right:10px; 	
+}
+.talign
+{
+  margin-top:-200px;
+  margin-left:10px;
+  border:1px solid;
+  width:190px;
+  
+}
+</style>
+<script>
+function display()
+	{
+	   var imgtxt1 = document.getElementById("imagelink1").value;
+	   var txt1 = document.getElementById("text1").value;
+	   localStorage.setItem("txtimg1",imgtxt1);
+	   localStorage.setItem("1txt",txt1);
+	   return false;
+	}
+</script>
+<body>
+<table border="0px" bgcolor="#f0f0f0">
+<tr>
+<td>
+<table style="margin-left:20px;margin-top:0px;border:solid 1.5px;border-radius:20px;border-color:#c4c4c4;" bgcolor="white">
+<tr>
+<td></td>
+<td><img src="http://ps-resource-center.s3.amazonaws.com/material-design-icons/action/drawable-hdpi/ic_search_grey600_48dp.png" width="19" height="19"></td>
+<td><input type="text" class="searchbox" title="Search"></input></td>
+<td>
+<td></td>
+</tr>
+</table>
+</td>
+<td>
+<img src="https://i.ibb.co/rMqHrHV/Transparent-Icon.png" style="margin-left:180;margin-top:0px" width="189" height="70">
+</td>
+<td style="width:500px"align="right"><span id="nuser" style="font-size:20px"></span></td></td>
+<script>
+ document.getElementById("nuser").innerHTML = localStorage.getItem("valinput");
+</script>
+<td></td>
+<td></td>	
+<td style="width:80px"><img src="https://cdn2.iconfinder.com/data/icons/men-avatars/33/man_2-512.png" height="20px" width="20px"></td>
+</table>
+
+<hr>
+<div style="height:553px;background-attachment: fixed;background-image:url('https://images.unsplash.com/photo-1507471509451-1d04d60f896d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1575&q=80');background-repeat:repeat">
+
+<br>
+<form action="./file1.html"/>
+<div class="areatext">
+<table>
+<tr>
+<td>
+</tr>
+<textarea id="text1" rows="13" cols="80" style="margin-left:350px;outline:none;border-radius:10px;font-family:arial" placeholder=" Write What You Feel"></textarea>
+</table>
+<button onclick="display();" type="submit" style="width:80px;height:40px;outline:none;margin-left:380px;border-radius:20px;background-color:#b81c1c;border-color:white;color:white"><b>Post</b></button>
+<input type="text" id="imagelink1" placeholder="                                       Add Image Link" style="decoration:none;outline:none;width:400px;height:30px;border-radius:20px;margin-left:20px">
+</div>
+</form>
+<!--<div class="talign">
+<table style="width:190px;height:300px;font-size:12px;font-family:arial;background-color:white;color:black;border-color:black;border-radius:2px;" border="0px">
+<tr><td align="left" style="height:1px;" colspan="2"><br><b>Get Photos For Your Blog:</b><br><br><tr><td style="height:10px;border-bottom: 1px solid black;"><input type="text" style="width:140px;align:left"></td><td style="border-bottom: 1px solid black;"><img src="https://image.flaticon.com/icons/svg/270/270014.svg" width="40px" height="25px"></td></tr>
+<tr><td align="left" style="height:1px;" colspan="2"><br><b>Get Quotes For Your Blog:</b><br><br><tr><td style="height:10px;border-bottom: 1px solid black"><input type="text" style="width:140px;align:left"></td><td style="border-bottom: 1px solid black;" align="center"><img src="http://www.pngplay.com/wp-content/uploads/1/Letter-Q-PNG-Stock-Photo.png" width="25px" height="25px"></td></tr>
+<tr><td colspan="2"></td></tr>
+<tr><td colspan="2"></td></tr>
+</table>
+</div>-->
+</div>
+</body>
+</html>

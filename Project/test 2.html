@@ -1,0 +1,152 @@
+<html>
+<head>
+	<title></title>
+	<style>
+		.logo{
+			
+			text-align: center;
+			padding-right: 20px;
+			
+		}
+		.form{
+			border-radius: 15px;
+			
+			margin-left: 400px;
+			margin-right: 440px;
+			background-color: 	#c20c0c;
+			box-shadow: 5px 10px 5px 10px #888888;
+			margin-top: 20px;
+			padding-top: 15px;
+			padding-bottom: 75px;
+            margin-bottom: 8px;
+
+			  /*box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;*/
+		}
+		#head{
+			margin-left: 2;
+		}
+		.register{
+			text-align: center;
+		}
+		h1{
+			color:white;
+		}
+		h1:hover{
+			color: white;
+		}
+		label{
+			color:white;
+		}
+		label:hover{
+			color:white;
+		}
+		button:hover{
+			background-color: white;
+		}
+		input:hover{
+			background-color:#05871f;
+			color:white;
+		}
+		input:hover::placeholder{
+			color:white;
+		}
+		body{
+			border:2px solid #800020;
+			padding:17px;
+			border-radius:15px;
+            height: auto;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<div class="logo">
+		<a href=""><img src="https://i.ibb.co/5924vyT/Name-2.jpg" alt="" width="300" height="111"></a>
+	</div>
+	<div class="form">
+		<div class="register">
+		<h1>Register Yourself</h1>
+	</div>
+	<br>
+	<br>
+  <form>
+  <table style="margin-left:50px">
+  <tr>
+  <td style="width:200px"><label id="head" for="fname">First Name:</label></td>
+  <td><input type="text" id="fname" name="fname" placeholder="Enter your first name"></td>
+  </tr>
+  <tr></tr>
+  <tr>
+  <td><label for="lname">Last Name:</label></td>
+  <td><input type="text" id="lname" name="lname" placeholder="Enter your last name"></td>
+  </tr>
+  <tr></tr>
+  <tr>
+  <td><label for="lname">Username:</label></td>
+  <td><input type="text" id="lname" name="lname" placeholder="Enter a valid username"></td>
+  </tr>
+  <tr></tr>
+  <tr>
+  <td><label for="pwd">Create Password:</label></td>
+  <td><input type="password" id="demo" name="pwd" placeholder="Enter a password"></td>
+  </tr>
+  <tr></tr>
+  <tr>
+  <td><label for="pwd">Confirm Password:</label></td>
+  <td><input type="password" id="demo1" name="pwd" placeholder="Confirm your password"></td>
+  </tr>
+  <tr></tr>
+  <tr>
+  <td><label for="email">Email:</label></td>
+  <td><input type="email" id="email" name="email" placeholder="Enter Your Email"></td>
+  </tr>
+  <tr></tr>
+  <tr>
+  <td><label for="quantity">Contact:</label></td>
+  <td><input type="tel" id="phone" name="phone" placeholder="123-4500-678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" required></td>
+  </tr>
+  <tr></tr>
+  <tr>
+  <td><label for="birthdate">Date Of Birth:</label></td>
+  <td><input type="date" id="birthday" name="birthday"></td>
+   </tr>
+   <tr></tr>
+   <tr></tr>
+   <tr></tr>
+   <tr></tr>
+   <tr></tr>
+   <tr></tr>
+   <tr></tr>
+   <tr></tr>
+   <tr><td></td><td>
+  <button onclick="myFunction()">Register</button>
+  </td></tr>
+</table>
+</form> 
+
+	</div>
+</div>
+<script>
+    function myFunction() {
+      var x = document.getElementById("demo").value;
+      console.log(x);
+      var y = document.getElementById("demo1").value;
+      console.log(y);
+      if(x!=y){
+        audio.up.play()  
+        alert("password is not same");
+          
+      }
+      else{
+          audio.down.play()
+        //   alert("fill complete form");4
+      }
+    }
+    const audio ={
+up:new Audio('password.ogg'),
+down:new Audio('next.ogg'),
+    };
+    </script>
+</body>
+</html>

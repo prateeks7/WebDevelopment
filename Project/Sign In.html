@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.logo{
+			
+			text-align: center;
+			padding-right: 20px;
+			
+		}
+		.form{
+			border-radius: 15px;
+			
+			margin-left: 20px;
+		}
+		#head{
+			margin-left: 2;
+			font-size:20px;
+		}
+		.register{
+			margin-left:100px;
+		}
+		h1{
+			color:black;
+		}
+		h1:hover{
+			color: black;
+		}
+		label{
+			color:black;
+		}
+		label:hover{
+			color:black;
+		}
+		button
+		{
+		   background-color:black;
+		   color:white;
+		}
+		button:hover{
+			background-color: #c71a1a;
+			color:white;
+		}
+		input
+		{
+		  background:none;
+		  color:black;
+		}
+		input:hover{
+			background-color:#d9e6fc;
+			color:black;
+		}
+		input:hover::placeholder{
+			color:black;
+		}
+		body{
+			
+            height: auto;
+			background-image:url('https://i.ibb.co/1bhPHpQ/fbg.jpg');
+			margin:0;
+			padding:0;
+			background-size:100% 120%;
+		
+			
+		}
+		.lap
+		{
+		   width:50%;
+		   height:387px;
+		   border:0px solid;
+		   margin-left:49.8%;
+		   margin-top:150px;
+		   animation: slide 15s infinite;
+		   padding:0px;
+		   background:url('https://i.ibb.co/nkR9ZGF/image.png');
+		   background-size:100%;
+		  		  
+		}
+		@keyframes slide
+		{
+		   20%{background:url('https://i.ibb.co/3vRr2dq/1.png');background-size:100%;}
+		   40%{background:url('https://i.ibb.co/f4gk2BN/02.png');background-size:100%;}
+		   60%{background:url('https://i.ibb.co/ZmvkPGj/3.png');background-size:100%;}
+		   80%{background:url('https://i.ibb.co/mS8f8xJ/4.png');background-size:100%;}
+		   
+		}
+	</style>
+	<script>
+	function send()
+	{
+	   var inpu = document.getElementById("uname").value;
+	   localStorage.setItem("valinput",inpu);
+	   return false;
+	}
+	</script>
+</head>
+<body >
+<div class="lap" >
+</div>
+<div style="margin-top:-510px;margin-left:120px;height:600px;width:500px;">
+		<img src="https://i.ibb.co/rMqHrHV/Transparent-Icon.png" width="250px" style="margin-left:140px;margin-top:0px">
+		<br>
+		<br>
+		<h1 align="center">Register</h1>
+		<br>
+  <form action="./file0.html"/>
+  <table style="margin-left:50px;margin-top:8px">
+  <tr>
+  <td style="width:200px"><label id="head" for="fname">First Name:</label></td>
+  <td><input type="text" id="fname" name="fname" placeholder="Enter your first name"></td>
+  </tr>
+  <tr></tr>
+  <tr>
+  <td><label id="head" for="lname">Last Name:</label></td>
+  <td><input type="text" id="lname" name="lname" placeholder="Enter your last name"></td>
+  </tr>
+  <tr></tr>
+  <tr>
+  <td><label id="head" for="lname">Username:</label></td>
+  <td><input type="text" id="uname" placeholder="Enter a valid username"></td>
+  </tr>
+  <tr></tr>
+  <tr>
+  <td><label id="head" for="pwd">Create Password:</label></td>
+  <td><input type="password" id="pwd" name="pwd" placeholder="Enter a password"></td>
+  </tr>
+  <tr></tr>
+  <tr>
+  <td><label id="head" for="pwd">Confirm Password:</label></td>
+  <td><input type="password" id="pwd" name="pwd" placeholder="Confirm your password"></td>
+  </tr>
+  <tr></tr>
+  <tr>
+  <td><label id="head" for="email">Email:</label></td>
+  <td><input type="email" id="email" name="email" placeholder="Enter Your Email"></td>
+  </tr>
+  <tr></tr>
+  <tr>
+  <td><label id="head" for="quantity">Contact:</label></td>
+  <td><input type="text" id="quantity" name="quantity" maxlength="10" placeholder="xxx-xxx-xxxx"></td>
+  </tr>
+  <tr></tr>
+  <tr>
+  <td><label id="head" for="birthdate">Date Of Birth:</label></td>
+  <td><input type="date" id="birthdate" name="birthdate" placeholder="dd-mm-yyyy"></td>
+   </tr>
+   <tr></tr>
+   <tr></tr>
+   <tr></tr>
+   <tr></tr>
+   <tr></tr>
+   <tr></tr>
+   <tr></tr>
+   <tr></tr>
+   <tr><td></td><td>
+  <button onclick="send();" type="submit">Register</button>
+  </td></tr>
+</table>
+</form> 
+</div>
+</body>
+</html>
