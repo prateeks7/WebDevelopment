@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+       <meta name="Description" content="Description">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign In</title>
+	<link rel="icon" href="https://i.ibb.co/MGtRCS5/BLMLOGO.png">
+	<style>
+		.logo{
+			
+			text-align: center;
+			padding-right: 20px;
+			
+		}
+		.form{
+			border-radius: 15px;
+			
+			margin-left: 20px;
+		}
+		#head{
+			margin-left: 2;
+			font-size:20px;
+			color:white;
+		}
+		.register{
+			margin-left:100px;
+		}
+		h1{
+			color:white;
+		}
+		h1:hover{
+			color: white;
+		}
+		label{
+			color:black;
+		}
+		label:hover{
+			color:black;
+		}
+		button
+		{
+		   background-color:black;
+		   color:white;
+		}
+		
+		input
+		{
+		  background:none;
+		  color:white;
+		}
+		input:hover{
+			background-color:#d9e6fc;
+			color:black;
+		}
+		input:hover::placeholder{
+			color:white;
+		}
+		body{
+			
+            height: auto;
+			background-color:black;
+			margin:0;
+			padding:0;
+			background-size:100% 120%;
+		
+			
+		}
+		.lap
+		{
+		   width:50%;
+		   height:387px;
+		   border:0px solid;
+		   margin-left:49.8%;
+		   margin-top:150px;
+		   animation: slide 15s infinite;
+		   padding:0px;
+		   
+		   background-size:100%;
+		  		  
+		}
+		
+		
+		
+	</style>
+</head>
+<body >
+<div class="lap" >
+</div>
+<div style="margin-top:-510px;margin-left:340px;height:600px;width:500px;">
+		<img src="https://i.ibb.co/MGtRCS5/BLMLOGO.png" width="350px" style="margin-left:140px;margin-top:0px">
+		<h1 style="margin-top:10px; margin-left:230px;">REGISTER</h1>
+		<br>
+</div>
+<div class="form" style="margin-top:-220px;margin-left:530px;">
+  <form id="nex" action="./page2.html"/>
+  <table style="margin-left:-50px;margin-top:-10px;width:650px" border="0px" class="abc">
+  <tr>
+  <td style="width:200px"><label id="head" for="fname">First Name:</label></td>
+  <td><input type="text" id="fname" name="fname" placeholder="Enter your first name" onblur="err1()"></td><td><span id="err1" style="font-size:12px"></span></td>
+  </tr>
+  <tr></tr>
+  <tr>
+  <td><label id="head" for="lname">Last Name:</label></td>
+  <td><input type="text" id="lname" name="lname" placeholder="Enter your last name" onblur="err2()"></td><td><span id="err2" style="font-size:12px"></span></td>
+  </tr>
+  <tr></tr>
+  <tr>
+  <td><label id="head" for="lname">Username:</label></td>
+  <td style="width:180px"><input type="text" id="uname" placeholder="Enter a valid username" onblur="err3()"></td><td><span id="err3" style="font-size:12px"></span></td>
+  </tr>
+  <tr></tr>
+  <tr>
+  <td><label id="head" for="pwd">Create Password:</label></td>
+  <td><input type="password" id="pwd" name="pwd" placeholder="Enter a password" onblur="err4()"></td><td><span id="err4" style="font-size:12px"></span></td>
+  </tr>
+  <tr></tr>
+  <tr>
+  <td><label id="head" for="pwd">Confirm Password:</label></td>
+  <td><input type="password" id="pwd2" name="pwd" placeholder="Confirm your password" onblur="err5()"></td><td><span id="err5" style="font-size:12px"></span></td>
+  </tr>
+  <tr></tr>
+  <tr>
+  <td><label id="head" for="email">Email:</label></td>
+  <td><input type="email" id="email" name="email" placeholder="Enter Your Email" onblur="err6()"></td><td><span id="err6" style="font-size:12px"></span></td>
+  </tr>
+  
+  
+   <tr></tr>
+   <tr></tr>
+   <tr></tr>
+   <tr></tr>
+   <tr></tr>
+   <tr></tr>
+   <tr></tr>
+   <tr></tr>
+   <tr><td></td><td>
+  <button onclick="send();" type="submit">Register</button>
+  </td></tr>
+</table>
+</form> 
+
+</div>
+</body>
+</html>
