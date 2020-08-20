@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>LOG IN</title>
+	
+<link rel="icon" href="https://i.ibb.co/QrZ5CWf/GLOGO.jpg">
 	<style>
 		.logo{
 			
@@ -94,9 +96,21 @@
 	<script>
 	function send()
 	{
+	   var u = document.getElementById("uname").value;
+	   var pas = document.getElementById("password").value;
+	   if(u.length == 0 || pas.length == 0)
+	   {
+	     alert("Please Fill All Inputs");
+		 document.getElementById("nex").action = "";
+	   }
+	   else
+	   {
 	   var inpu = document.getElementById("uname").value;
 	   localStorage.setItem("valinput",inpu);
 	   return false;
+	   
+		 document.getElementById("nex").action = "file0.html";
+	   }
 	}
 	</script>
 	<script>
@@ -127,7 +141,7 @@
 		<br>
 		<h1 align="center">LOG IN</h1>
 		<br>
-  <form action="./file0.html"/>
+  <form id="nex" action="./file0.html">
   <table style="margin-left:120px;margin-top:40px;width:500px" border="0px">
   <tr>
   <td><input type="text" id="uname" name="uname" placeholder="UserName" onblur="err0();"></td><td style="width:100px"></td><td style="width:1000px"><span id="uerr" style="font-size:12px"></span></td>

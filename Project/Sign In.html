@@ -90,9 +90,32 @@
 	<script>
 	function send()
 	{
+	   var u = document.getElementById("uname").value;
+	   var f = document.getElementById("fname").value;
+	   var l = document.getElementById("lname").value;
+	   var p = document.getElementById("pwd").value;
+	   var p2 = document.getElementById("pwd2").value; 
+	   var em = document.getElementById("email").value;
+	   var c = document.getElementById("contact").value;
+	   var dob = document.getElementById("DOB").value;
+	   if(u.length==0 || f.length==0 || l.length==0 || p.length==0 || p2.length==0 || em.length==0 || c.length==0 || dob.length==0)
+	   {
+	     alert("Please Fill All Inputs");
+		 document.getElementById("nex").action = "";
+	   }
+	   else if(p != p2)
+	   {
+	   alert("Password Does Not Match");
+	   document.getElementById("nex").action="";
+	   }
+	   
+	   else{
 	   var inpu = document.getElementById("uname").value;
 	   localStorage.setItem("valinput",inpu);
 	   return false;
+	   
+	   document.getElementById("nex").action = "file0.html";
+	   }
 	}
 	function err1()
 	{
@@ -200,7 +223,7 @@
 		<br>
 		<h1 align="center">REGISTER</h1>
 		<br>
-  <form action="./file0.html"/>
+  <form id="nex" action="./file0.html"/>
   <table style="margin-left:50px;margin-top:8px;width:650px" border="0px">
   <tr>
   <td style="width:200px"><label id="head" for="fname">First Name:</label></td>
