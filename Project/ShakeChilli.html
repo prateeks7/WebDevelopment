@@ -1,7 +1,6 @@
 <html>
 <head>
 <meta charset="utf-8">
-       <meta name="Description" content="Description">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>
 ShakeChilli (Home)
@@ -21,11 +20,32 @@ body{
   margin:0px;
   padding:0px;
 }
+.homeback
+{
+   background-image:url('https://i.ibb.co/wdF29fz/Home.jpg');
+   background-size:100vw 100vh;
+   height:100%;
+   width:100%;
+}
 
+.home2back
+{
+   margin:0;
+   padding:0;
+   display:block;
+   height:663px;
+   width:100%;
+   background-image:url('https://i.ibb.co/TY0WvzS/BG1.jpg');
+}
+.content
+{
+  float:right;
+  margin-top:14%;
+}
 .right{
   display: block;
-  width: 140px;
-  height:50px;
+  width: 9em;
+  height:3em;
   border-radius:40px;
   outline:none;
 
@@ -33,8 +53,8 @@ body{
 }
 .left{
   display: block;
-  width: 140px;
-  height:50px;
+  width:9em;
+  height:3em;
    border-radius:40px;
    outline:none;
   }
@@ -82,7 +102,7 @@ body{
   position: absolute;
   border-radius:20px;
   background-color:black ;
-  bottom: 50px;
+  bottom: 30px;
   margin-left:-170%;
   z-index: 1;
 }
@@ -109,24 +129,113 @@ body{
   background-color:transparent;
   cursor: pointer;
   }
+  table{
+    margin-left:20%;
+	
+  }
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:none;
+}
+  p{
+     font-size:1em;
+  }
+
+  bdiv{
+  margin-left:45.5vw;
+  margin-top:90vh;
+  display:block;
+  border:0px solid white;
+  font-size:1em;
+  }
+ @media all and (max-width:1080px)
+{
+.homeback
+{
+   background-image:url('https://i.ibb.co/5MBFCq5/mobhome.jpg');
+   background-size:100vw 100vh;
+   height:100%;
+   width:100%;
+}
+.home2back
+{
+   margin:0;
+   padding:0;
+   width:100%;
+   height:100vh;
+   background-image:url('https://i.ibb.co/8sCNV2V/homebg2.jpg');
+}
+.content
+{
+  margin-top:0%;
+  height:100%;
+  border:1px solid red;
+}
+p{
+   margin-top:10%;
+   font-size:3em;
+}
+h3{
+   font-size:4em;
+}
+table{
+     margin-left:37%;
+}
+#cont
+{
+  display:none;
+}
+.dropup{
+  display: inline-block;
+  width:100%;
+  height:2%;
+  border:1px pink solid;
+  margin-top:50%;
+}
+.dropup-content {
+  display:inline;
+  border-radius:0px;
+  background-color:black ;
+  margin-left:0%;
+  bottom:0px;
+  height:100%;
+  width:100%;
+}
+.dropup-content a {
+  display: inline-block;
+}
+li a
+{
+  display:inline-block;
+}
+h3{
+   margin-top:85%;
+}
+
+} 
+
+
 </style>
 </head>
 <body bgcolor="red">
-<div style="background-image:url('https://i.ibb.co/wdF29fz/Home.jpg');background-size:100vw 100vh;height:100%;width:100%">
+<div class="homeback">
 <br>
-<div style="margin-left:45vw;margin-top:90vh;display:block;border:0px solid white"><span class="blinking">Scroll Down</span></div>
+<div class="bdiv"><span class="blinking">Scroll Down</span></div>
 </div>
-<div style="margin:0;padding:0;display:block;height:663px;width:100%;background-image:url('https://i.ibb.co/TY0WvzS/BG1.jpg')">
-<div style="float:right;margin-top:14%">
+<div class="home2back" >
+<div class="content">
 <h3 align="center" >YOUR WORDS OF YOUR OWN WORLD</h3>
-<p align="center" style="font-size:16">Fanciful thoughts of sheik chilli with intellectual writing of shakespeare.<br>
+<p align="center">Fanciful thoughts of sheik chilli with intellectual writing of shakespeare.<br>
 We here at shakechilli wants to provide you the exact fused essence of it.<br>
 Just let your thoughts flow and inscribe them her forever for the world to know.<br>
 <br>
 ~ShakeChilli
 </p>
 <bR>
-<table border="0px" style="margin-left:20%">
+<table border="0px" >
 <tr>
 <td>
 <button type="submit" class="left" onClick="location.href='LogIn.html'" target="_blank" >Log in</button>
@@ -140,8 +249,10 @@ Just let your thoughts flow and inscribe them her forever for the world to know.
 <div class="dropup">
   <button id="cont" >  &#10068</button>
   <div class="dropup-content">
-    <a href="./Report Issue.html">Report Issue</a>
+    <ul>
+	<a href="./Report Issue.html">Report Issue</a>
     <a href="./Contact Us.html">Contact Us</a>
+    </ul>	  
   </div>	
 </div>
 </div>
